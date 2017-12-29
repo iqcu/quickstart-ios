@@ -26,7 +26,7 @@
 @import GoogleSignIn;
 // [END google_import]
 @import FBSDKCoreKit;
-@import Fabric;
+//@import Fabric;
 @import TwitterKit;
 
 @implementation AppDelegate

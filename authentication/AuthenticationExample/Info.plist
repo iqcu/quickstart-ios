@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>consumerSecret</key>
-	<string></string>
-	<key>consumerKey</key>
-	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -35,16 +31,24 @@
 			<string>Client</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>REVERSED_CLIENT_ID</string>
+				<string>com.googleusercontent.apps.364142797110-3losh6c05mh52634q8i9h86akk0fjrcr</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb377261939411671</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>FacebookAppID</key>
-	<string>Placeholder</string>
+	<string>377261939411671</string>
 	<key>FacebookDisplayName</key>
-	<string>Dev</string>
+	<string>PocAuth</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
@@ -56,13 +60,6 @@
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
-			<key>twimg.com</key>
-			<dict>
-				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
-				<true/>
-				<key>NSIncludesSubdomains</key>
-				<true/>
-			</dict>
 			<key>akamaihd.net</key>
 			<dict>
 				<key>NSIncludesSubdomains</key>
@@ -83,6 +80,13 @@
 				<true/>
 				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
 				<false/>
+			</dict>
+			<key>twimg.com</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
 			</dict>
 		</dict>
 	</dict>
@@ -107,5 +111,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>consumerKey</key>
+	<string></string>
+	<key>consumerSecret</key>
+	<string></string>
 </dict>
 </plist>

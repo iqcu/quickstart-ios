@@ -107,6 +107,20 @@ static NSString *const kUpdatePhoneNumberText = @"Update Phone Number";
          [self hideSpinner:^{
          // [END_EXCLUDE]
          if (error) {
+             /*
+              Error Domain=FIRAuthErrorDomain Code=17999 "An internal error has occurred, print and inspect the error details for more information." UserInfo={error_name=ERROR_INTERNAL_ERROR, NSLocalizedDescription=An internal error has occurred, print and inspect the error details for more information., NSUnderlyingError=0x1c025cb60 {Error Domain=FIRAuthInternalErrorDomain Code=3 "(null)" UserInfo={FIRAuthErrorUserInfoDeserializedResponseKey={
+              code = 403;
+              errors =     (
+              {
+              domain = usageLimits;
+              extendedHelp = "https://console.developers.google.com/apis/api/identitytoolkit.googleapis.com/overview?project=364142797110";
+              message = "Access Not Configured. Google Identity Toolkit API has not been used in project 364142797110 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/identitytoolkit.googleapis.com/overview?project=364142797110 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.";
+              reason = accessNotConfigured;
+              }
+              );
+              message = "Access Not Configured. Google Identity Toolkit API has not been used in project 364142797110 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/identitytoolkit.googleapis.com/overview?project=364142797110 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.";
+              }}}}
+              */
            // [START_EXCLUDE]
            [self showMessagePrompt:error.localizedDescription];
            // [END_EXCLUDE]
